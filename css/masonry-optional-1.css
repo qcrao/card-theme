@@ -1,0 +1,122 @@
+
+/* Extend the main page wider to allow for blocks to be wider  */
+
+div[style*="padding-right: calc((100% - 800px) / 2); padding-left: calc((100% - 800px) / 2);"], div[style*="padding-right: calc((100% - 568px) / 2); padding-left: calc((100% - 1032px) / 2);"] {
+    /*
+    Roam Default 800px
+    padding-right: calc((100% - 800px) / 2) !important;
+    padding-left: calc((100% - 800px) / 2) !important;
+
+    FULL WIDTH
+    padding-right: calc((100% - 3400px) / 2) !important;
+    padding-left: calc((100% - 3400px) / 2) !important;
+    */
+
+    padding-right: calc((100% - var(--block-widths)) / 2) !important;
+    padding-left: calc((100% - var(--block-widths)) / 2) !important;
+}
+
+/* Block text widths to extend block text wider for when you make the page wider with the CSS above  */
+
+.roam-block-container {
+    max-width: unset;
+}
+
+#right-sidebar .rm-block-children.rm-block__children.rm-level-0>div.roam-block-container, #right-sidebar div.zoom-path-view+div>div.roam-block-container {
+    width: 98%;
+}
+
+.rm-block-text {
+    max-width: unset;
+}
+
+#right-sidebar div.rm-zoom.zoom-path-view {
+    width: 98%;
+}
+
+/* Allow images to resive full width */
+
+.hoverparent[style^="width: 580px;"], .hoverparent[style^="width: 720px;"] {
+    width: 100% !important;
+    max-width: 1100px !important;
+}
+
+.rm-inline-img, .react-resizable[style^='width: 580px;'], .react-resizable[style^='width: 720px;'] {
+    width: 100% !important;
+}
+
+/* Override image, iframe, pdf resize form abhay 1-30-21 */
+
+div[style*="width: 580px;"], div[style*="width: 720px;"] {
+    width: 100% !important;
+    max-width: 1100px !important;
+}
+
+div[style*="height: 720px;"] {
+    height: 85vh !important;
+}
+
+/* Search bar wide when typing in it */
+
+/* These account for left sidebar being open and making sure search bar stays on top of it */
+.roam-sidebar-container.noselect:hover {
+    z-index: 1001;
+}
+.rm-topbar {
+    z-index: 1000;
+}
+
+.rm-find-or-create-wrapper:focus-within {
+    flex: 0 1 77% !important;
+}
+
+.bp3-overlay-open ul.bp3-menu .rm-menu-item li>span {
+    max-height: 42px !important;
+    word-break: break-word !important;
+    overflow: hidden !important;
+    display: inline-block !important;
+}
+
+.bp3-overlay-open ul.bp3-menu .rm-menu-item li {
+    list-style-type: none !important;
+    margin-left: -35px;
+}
+
+/* Buttons / Icons in menu area by search bar */
+
+/* Filter button was kind of high and to the left */
+
+.rm-topbar .bp3-button .bp3-icon.bp3-icon-filter {
+    margin-top: 4px;
+    margin-right: -18px;
+}
+
+/* Fixing the sidebar close button to show on very right of menu bar */
+
+#right-sidebar .bp3-icon-menu-open {
+    z-index: 1001;
+    padding-top: 4px !important;
+}
+.rm-topbar {
+    padding-right: 30px;
+}
+
+/* Add dashed line on hover of sidebar resizer line in middle of page */
+
+.rm-resize-handle:hover {
+    opacity: 0.4 !important;
+    border-right: 2px dashed #1b1a23 !important;
+    padding-left: 5px;
+}
+
+/* The "all collapse/expand" invisible line to very left of blocks */
+
+.rm-level-0>.rm-multibar {
+    opacity: 0.25;
+}
+
+/* Hide "Outline of: " in the sidebar except for block references because otherwise nowhere to grab for drag n drop. */
+
+div.sidebar-content div.flex-h-box.window-headers>div:nth-child(2)>span:first-child:not([style^="margin-right: 6px"]) {
+    display: none;
+}

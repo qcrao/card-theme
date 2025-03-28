@@ -1,0 +1,152 @@
+/* FLEETING NOTES */
+span.rm-page-ref[data-tag="F-Note"] {
+  background: #fff;
+  background-size: 100%;
+  color: #000;
+  padding: 2px 5px 2px 5px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #f21da140;
+  border-width: thin;
+  position: relative;
+  box-shadow: 0px 1px 3px -1px #000000, 0px -1px 5px #dfdfdf;
+}
+
+/* LITERATURE NOTES */
+span.rm-page-ref[data-tag="L-Note"] {
+  background: #fff;
+  background-size: 100%;
+  color: #000;
+  padding: 2px 5px 2px 5px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #215f0040;
+  border-width: thin;
+  position: relative;
+  box-shadow: 0px 1px 3px -1px #000000, 0px -1px 5px #dfdfdf;
+}
+
+/* REFERENCE NOTES */
+span.rm-page-ref[data-tag="R-Note"] {
+  background: #fff;
+  background-size: 100%;
+  color: #000;
+  padding: 2px 5px 2px 5px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #f26e1d40;
+  border-width: thin;
+  position: relative;
+  box-shadow: 0px 1px 3px -1px #000000, 0px -1px 5px #dfdfdf;
+}
+
+/* PERMANENT NOTES */
+span.rm-page-ref[data-tag="Z-Note"] {
+  background-image: linear-gradient(90deg, #1da1f2, #1da1f2);
+  background-size: 100%;
+  color: #ffffff;
+  padding: 2px 5px 2px 5px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 3px 0 0 3px;
+  position: relative;
+  box-shadow: 0px 1px 3px -1px #000000, 0px -1px 5px #dfdfdf;
+}
+
+span.rm-page-ref[data-tag="Z-Note"] + span[data-link-title] {
+  background: #1da1f21e !important;
+  color: #f5f8fa !important;
+  padding: 3px 5px 3px 15px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 400;
+  border-radius: 0 3px 3px 0;
+  margin-left: -5px;
+}
+
+span.rm-page-ref[data-tag="Z-Note"]:after,
+span.rm-page-ref[data-tag="Permanent Notes"]:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+span.rm-page-ref[data-tag="Z-Note"]:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #1da1f2;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+span.rm-page-ref[data-tag="Z-Note"]:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #1da1f2;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+/* QUESTION NOTES */
+span.rm-page-ref[data-tag="Q-Note"] {
+  background: #f79514;
+  background-size: 100%;
+  color: #ffffff;
+  padding: 2px 5px 2px 5px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 500;
+  border-radius: 3px 0 0 3px;
+  position: relative;
+  box-shadow: 0px 1px 3px -1px #000000, 0px -1px 5px #dfdfdf;
+}
+
+span.rm-page-ref[data-tag="Q-Note"] + span[data-link-title] {
+  background: #f79514 !important;
+  color: #f5f8fa !important;
+  padding: 3px 5px 3px 15px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 400;
+  border-radius: 0 3px 3px 0;
+  margin-left: -5px;
+}
+
+span.rm-page-ref[data-tag="Q-Note"]:after,
+span.rm-page-ref[data-tag="Permanent Notes"]:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+span.rm-page-ref[data-tag="Q-Note"]:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #f79514;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+span.rm-page-ref[data-tag="Q-Note"]:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #f79514;
+  border-width: 10px;
+  margin-top: -10px;
+}

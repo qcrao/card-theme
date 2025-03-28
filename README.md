@@ -1,77 +1,92 @@
-# Last Year Today
+# Card Theme for Roam Research
 
-Last Year Today is a Roam Research extension that automatically shows you what you wrote on the same day in previous years. It helps you reflect on your past thoughts, track your progress, and rediscover valuable insights from your journal entries.
-
-![historical-pages](https://github.com/qcrao/last-year-today/blob/main/assets/historical-pages.png?raw=true)
+Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes). It combines the Masonry Vanilla theme with custom note card styling and Chinese font support.
 
 ## Features
 
-1. **Automatic Daily Updates**
+1. **Beautiful Card-Based Design**
 
-   - Automatically opens your historical pages at a configurable time each day
-   - Displays entries from previous years in the right sidebar
-   - Customizable number of years to look back (1-10 years)
+   - Clean and modern card-based interface
+   - Custom styling for different note types
+   - Shadow effects and rounded corners for better visual hierarchy
 
-2. **Visual Distinction**
+2. **Note Type Styling**
 
-   - Historical pages are visually distinct with custom styling
-   - Beautiful borders and hourglass icons for easy identification
-   - Clean and intuitive interface
+   - Fleeting Notes (F-Note): Light style with red accent
+   - Literature Notes (L-Note): Light style with green accent
+   - Reference Notes (R-Note): Light style with orange accent
+   - Permanent Notes (Z-Note): Blue gradient with arrow design
+   - Question Notes (Q-Note): Orange style with arrow design
 
-3. **Flexible Controls**
-   - Command palette integration for manual control
-   - Open and close historical pages on demand
-   - Configurable settings through the Roam Research settings panel
+3. **Typography**
+
+   - LXGW WenKai font integration for better Chinese text display
+   - Optimized font sizes for readability
+   - Consistent styling across the interface
+
+4. **Base Theme Integration**
+   - Built on top of the Masonry Vanilla theme
+   - Includes mobile-friendly optimizations
+   - Compatible with Viktor Tabori's Long tap JS
 
 ## Installation
 
 1. In Roam Research, go to Settings > Roam Depot > Community extensions
-2. Search for "Last Year Today"
+2. Search for "Card Theme"
 3. Click "Install"
+
+[TODO: Add screenshot of installation process]
 
 ## Configuration
 
-After installation, configure the extension in the Roam Research settings panel:
+After installation, the theme will be automatically applied to your Roam Research graph. No additional configuration is required.
 
-1. **Years Back**: Choose how many years to look back (1-10 years)
+### Theme Components
 
-   - Default: 1 year
-   - Maximum: 10 years
+The theme includes:
 
-2. **Hour to Open Last Year Today Page**: Set when the historical pages should automatically open
-   - Default: 9 AM
-   - Range: 0-23 (24-hour format)
+- Main Masonry CSS (base styling)
+- Optional enhancements for additional features
+- Mobile-specific optimizations
+- Custom note type styling
+- Chinese font integration
 
-![settings](https://github.com/qcrao/last-year-today/blob/main/assets/settings.png?raw=true)
+[TODO: Add screenshot of themed interface]
 
 ## Usage
 
-### Automatic Updates
+### Note Type Tags
 
-The extension will automatically open your historical pages in the right sidebar at your configured time each day. Each historical page will be displayed in chronological order, from oldest to newest.
+To use the different note styles, simply tag your blocks with the appropriate tag:
 
-### Manual Controls
+- `#F-Note` - For Fleeting Notes
+- `#L-Note` - For Literature Notes
+- `#R-Note` - For Reference Notes
+- `#Z-Note` - For Permanent Notes
+- `#Q-Note` - For Question Notes
 
-You can also control the extension manually through the command palette (Cmd/Ctrl + P):
+[TODO: Add screenshot showing different note types]
 
-1. **Open Last Year Today**
+### Visual Styling
 
-   - Opens historical pages in the right sidebar
-   - Shows pages from previous years for the current date
+Each note type has its own distinct visual style:
 
-2. **Close Last Year Today**
-   - Closes all historical page windows
-   - Cleans up the sidebar
+- Fleeting Notes: White background with red border
+- Literature Notes: White background with green border
+- Reference Notes: White background with orange border
+- Permanent Notes: Blue gradient with arrow indicator
+- Question Notes: Orange background with arrow indicator
 
-![command-palette](https://github.com/qcrao/last-year-today/blob/main/assets/command-palette.png?raw=true)
+[TODO: Add screenshot of individual note styles]
 
-### Visual Indicators
+## Customization
 
-Historical pages are marked with:
+The theme is built to be modular. You can customize it by:
 
-- Distinctive borders
-- Hourglass icon (⏳)
-- Highlighted date headers
-- Subtle shadows for depth
+1. Enabling/disabling optional CSS components
+2. Modifying the color schemes
+3. Adjusting font sizes and families
 
-![historical-page](https://github.com/qcrao/last-year-today/blob/main/assets/historical-page.png?raw=true)
+For advanced customization, you can modify the CSS directly in your Roam Research settings.
+
+[TODO: Add screenshot of customization options]
