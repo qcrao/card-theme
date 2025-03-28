@@ -1,4 +1,5 @@
 import { cssContents } from "./css-contents";
+import { loadLeftToggleStart } from "./toggleFullPageScroll";
 
 const cssFiles = [
   "masonry-main.css",
@@ -13,34 +14,36 @@ let styleElements = [];
 function createStyle(cssFile) {
   const style = document.createElement("style");
   style.id = `card-theme-${cssFile.replace(".css", "")}`;
-
-  // 直接使用编译好的CSS内容
   style.textContent = cssContents[cssFile];
   document.head.appendChild(style);
   styleElements.push(style);
-  console.log(`Loaded CSS: ${cssFile}`); // 添加调试信息
+  console.log(`Loaded CSS: ${cssFile}`);
 }
 
 export default {
   onload: () => {
-    console.log("Card Theme is loading..."); // 添加调试信息
-    console.log("Available CSS files:", Object.keys(cssContents)); // 检查CSS文件是否被正确加载
+    console.log("Card Theme is loading...");
+    console.log("Available CSS files:", Object.keys(cssContents));
 
-    // 按顺序加载所有CSS文件
+    // Load all CSS files in order
     cssFiles.forEach((cssFile) => createStyle(cssFile));
-    console.log("Card Theme loaded successfully"); // 添加调试信息
+
+    // Load full page scroll toggle feature
+    loadLeftToggleStart();
+
+    console.log("Card Theme loaded successfully");
   },
 
   onunload: () => {
-    console.log("Card Theme is unloading..."); // 添加调试信息
-    // 移除所有已加载的样式
+    console.log("Card Theme is unloading...");
+    // Remove all loaded styles
     styleElements.forEach((style) => {
       if (style && style.parentNode) {
         style.parentNode.removeChild(style);
-        console.log(`Removed style: ${style.id}`); // 添加调试信息
+        console.log(`Removed style: ${style.id}`);
       }
     });
     styleElements = [];
-    console.log("Card Theme unloaded successfully"); // 添加调试信息
+    console.log("Card Theme unloaded successfully");
   },
 };
