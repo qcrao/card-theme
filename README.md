@@ -1,6 +1,6 @@
 # Card Theme for Roam Research
 
-Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes). It combines the Masonry Vanilla theme with custom note card styling and Chinese font support.
+Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes). It combines the Masonry Vanilla theme with custom note card styling.
 
 ## Features
 
@@ -18,13 +18,18 @@ Card Theme is a Roam Research extension that provides a beautiful, card-based th
    - Permanent Notes (Z-Note): Blue gradient with arrow design
    - Question Notes (Q-Note): Orange style with arrow design
 
-3. **Typography**
+3. **Enhanced Navigation**
 
-   - LXGW WenKai font integration for better Chinese text display
+   - Toggle full page scroll feature
+   - Pin/unpin main content area
+   - Improved right sidebar scrolling experience
+
+4. **Typography**
+
    - Optimized font sizes for readability
    - Consistent styling across the interface
 
-4. **Base Theme Integration**
+5. **Base Theme Integration**
    - Built on top of the Masonry Vanilla theme
    - Includes mobile-friendly optimizations
    - Compatible with Viktor Tabori's Long tap JS
@@ -49,11 +54,19 @@ The theme includes:
 - Optional enhancements for additional features
 - Mobile-specific optimizations
 - Custom note type styling
-- Chinese font integration
 
 [TODO: Add screenshot of themed interface]
 
 ## Usage
+
+### Toggle Full Page Scroll
+
+The theme includes a pin/unpin feature for better navigation:
+
+- Click the pin icon in the top bar to toggle between modes
+- When unpinned: Right sidebar can scroll the entire page
+- When pinned: Main content stays fixed while right sidebar scrolls independently
+- The sidebar collapse button visibility adjusts automatically based on the mode
 
 ### Note Type Tags
 
@@ -90,3 +103,13 @@ The theme is built to be modular. You can customize it by:
 For advanced customization, you can modify the CSS directly in your Roam Research settings.
 
 [TODO: Add screenshot of customization options]
+
+## Acknowledgments
+
+This theme is built upon several amazing contributions from the Roam Research community:
+
+- [Masonry Vanilla theme](https://gitmurf.github.io/masonry-vanilla/) by GitMurf, which provides the foundational masonry layout and functionality
+- [Lisa Marie Cabrelli](https://www.youtube.com/@LisaMarieCabrelli/playlists), whose "Roam for Results" course demonstrated the practical application and effectiveness of this theme style
+- The broader Roam Research community for their continuous contributions and improvements to the theming ecosystem
+
+The combination of these resources inspired the creation of this card-based theme to enhance the note-taking experience in Roam Research.
