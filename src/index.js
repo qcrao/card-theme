@@ -1,5 +1,8 @@
 import { cssContents } from "./css-contents";
-import { loadLeftToggleStart } from "./toggleFullPageScroll";
+import {
+  loadLeftToggleStart,
+  cleanupToggleFullPageScroll,
+} from "./toggleFullPageScroll";
 
 const cssFiles = [
   "masonry-main.css",
@@ -44,6 +47,10 @@ export default {
       }
     });
     styleElements = [];
+
+    // Clean up toggle full page scroll
+    cleanupToggleFullPageScroll();
+
     console.log("Card Theme unloaded successfully");
   },
 };

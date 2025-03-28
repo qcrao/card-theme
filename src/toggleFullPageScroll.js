@@ -90,3 +90,38 @@ export async function loadLeftToggleStart() {
     mainButton.addEventListener("click", toggleLeftSide);
   }
 }
+
+export function cleanupToggleFullPageScroll() {
+  // Remove the button and flex space
+  const nameToUse = "unpin-left-main";
+  const button = document.getElementById(nameToUse + "-button");
+  const flexSpace = document.getElementById(nameToUse + "-flex-space");
+
+  if (button) {
+    button.remove();
+  }
+
+  if (flexSpace) {
+    flexSpace.remove();
+  }
+
+  // Reset any modified styles
+  const roamAppFlex = document.querySelector("div.roam-app > div.flex-h-box");
+  const roamRSBCont = document.getElementById("roam-right-sidebar-content");
+
+  if (roamAppFlex) {
+    roamAppFlex.style.removeProperty("overflow");
+  }
+
+  if (roamRSBCont) {
+    roamRSBCont.style.setProperty("overflow", "auto");
+    const sbButton = document.getElementsByClassName(
+      "bp3-button bp3-minimal bp3-small bp3-icon-standard bp3-icon-menu-open"
+    );
+    if (sbButton.length == 1) {
+      const sbButtonElem = sbButton[0];
+      sbButtonElem.style.opacity = 1;
+      sbButtonElem.style.zIndex = 1001;
+    }
+  }
+}
