@@ -1,6 +1,8 @@
 # Card Theme for Roam Research
 
-Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes). 
+Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes).
+
+![overview](./assets/card-theme.png)
 
 ## Features
 
@@ -19,8 +21,6 @@ Card Theme is a Roam Research extension that provides a beautiful, card-based th
    - Question Notes (Q-Note): Orange style with arrow design
 
 3. **Enhanced Navigation**
-
-   - Toggle full page scroll feature
    - Pin/unpin main content area
 
 ## Installation
@@ -29,22 +29,19 @@ Card Theme is a Roam Research extension that provides a beautiful, card-based th
 2. Search for "Card Theme"
 3. Click "Install"
 
-[TODO: Add screenshot of installation process]
-
 ## Configuration
 
 After installation, the theme will be automatically applied to your Roam Research graph. No additional configuration is required.
 
-
 ## Usage
 
-### Toggle Full Page Scroll
+### Pin/Unpin Main Content
 
 The theme includes a pin/unpin feature for better navigation:
 
 - Click the pin icon in the top bar to toggle between modes
-- When pinned: Main content stays fixed while right sidebar scrolls independently
-- When unpinned: Main content scrolls with right sidebar together.
+- When unpinned: Main content stays fixed while right sidebar scrolls independently
+- When pinned: Main content scrolls with right sidebar together.
 
 ### Note Type Tags
 
@@ -56,8 +53,7 @@ To use the different note styles, simply tag your blocks with the appropriate ta
 - `#Z-Note` - For Permanent Notes
 - `#Q-Note` - For Question Notes
 
-[TODO: Add screenshot showing different note types]
-
+![note-type-tags](./assets/notes-styles.png)
 
 ## Acknowledgments
 
