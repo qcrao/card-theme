@@ -1,13 +1,13 @@
 # Card Theme for Roam Research
 
-Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes). It combines the Masonry Vanilla theme with custom note card styling.
+Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes). 
 
 ## Features
 
 1. **Beautiful Card-Based Design**
 
    - Clean and modern card-based interface
-   - Custom styling for different note types
+   - Beautiful styling for different note types
    - Shadow effects and rounded corners for better visual hierarchy
 
 2. **Note Type Styling**
@@ -22,17 +22,6 @@ Card Theme is a Roam Research extension that provides a beautiful, card-based th
 
    - Toggle full page scroll feature
    - Pin/unpin main content area
-   - Improved right sidebar scrolling experience
-
-4. **Typography**
-
-   - Optimized font sizes for readability
-   - Consistent styling across the interface
-
-5. **Base Theme Integration**
-   - Built on top of the Masonry Vanilla theme
-   - Includes mobile-friendly optimizations
-   - Compatible with Viktor Tabori's Long tap JS
 
 ## Installation
 
@@ -46,16 +35,6 @@ Card Theme is a Roam Research extension that provides a beautiful, card-based th
 
 After installation, the theme will be automatically applied to your Roam Research graph. No additional configuration is required.
 
-### Theme Components
-
-The theme includes:
-
-- Main Masonry CSS (base styling)
-- Optional enhancements for additional features
-- Mobile-specific optimizations
-- Custom note type styling
-
-[TODO: Add screenshot of themed interface]
 
 ## Usage
 
@@ -64,9 +43,8 @@ The theme includes:
 The theme includes a pin/unpin feature for better navigation:
 
 - Click the pin icon in the top bar to toggle between modes
-- When unpinned: Right sidebar can scroll the entire page
 - When pinned: Main content stays fixed while right sidebar scrolls independently
-- The sidebar collapse button visibility adjusts automatically based on the mode
+- When unpinned: Main content scrolls with right sidebar together.
 
 ### Note Type Tags
 
@@ -80,29 +58,6 @@ To use the different note styles, simply tag your blocks with the appropriate ta
 
 [TODO: Add screenshot showing different note types]
 
-### Visual Styling
-
-Each note type has its own distinct visual style:
-
-- Fleeting Notes: White background with red border
-- Literature Notes: White background with green border
-- Reference Notes: White background with orange border
-- Permanent Notes: Blue gradient with arrow indicator
-- Question Notes: Orange background with arrow indicator
-
-[TODO: Add screenshot of individual note styles]
-
-## Customization
-
-The theme is built to be modular. You can customize it by:
-
-1. Enabling/disabling optional CSS components
-2. Modifying the color schemes
-3. Adjusting font sizes and families
-
-For advanced customization, you can modify the CSS directly in your Roam Research settings.
-
-[TODO: Add screenshot of customization options]
 
 ## Acknowledgments
 
