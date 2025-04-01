@@ -2,7 +2,7 @@
 
 Card Theme is a Roam Research extension that provides a beautiful, card-based theme with special styling for different types of notes (Fleeting, Literature, Reference, Permanent, and Question notes).
 
-![overview](./assets/card-theme.png)
+![overview](https://github.com/qcrao/card-theme/raw/main/assets/card-theme.png)
 
 ## Features
 
@@ -53,7 +53,7 @@ To use the different note styles, simply tag your blocks with the appropriate ta
 - `#Z-Note` - For Permanent Notes
 - `#Q-Note` - For Question Notes
 
-![note-type-tags](./assets/notes-styles.png)
+![note-type-tags](https://github.com/qcrao/card-theme/raw/main/assets/notes-styles.png)
 
 ## Acknowledgments
 
